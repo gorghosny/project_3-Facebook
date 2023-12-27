@@ -15,6 +15,7 @@
     width: 100%;
     box-shadow: 1px 1px 5px 5px gray;
     height: 60px;
+    z-index: 10;
 }
 
 .left-nav{
@@ -131,6 +132,11 @@
 .right-side{
     overflow: hidden;
     padding-right: 50px;
+    height: 100vh;
+    position: sticky;
+    width: 300px;
+    top: 0;
+    left: 0;
 }
 
 .right-side:hover{
@@ -314,6 +320,72 @@
     margin-right: 10px;
     color: green;
 }
+
+.posted-image{
+    padding: 20px;
+    box-shadow: 1px 1px 3px 5px rgb(204, 204, 204);
+    margin-top: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.head-of-posted{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side-posted{
+    display: flex;
+    align-items: center;
+}
+
+.left-side-posted > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.name-of-account{
+    margin-left: 15px;
+}
+
+.name-of-account > h4{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.name-of-account > p{
+    color: gray;
+}
+
+.posted-image > p{
+    margin-top: 20px;
+}
+
+.posted-image > img{
+    width: 100%;
+    margin:20px 0;
+    padding: 0 10px;
+}
+
+.icons-posted{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-posted{
+    font-size: 20px;
+    color: gray;
+    margin-top: 10px;
+}
 /* end mid side */
 
 
@@ -328,6 +400,10 @@
 /* srart left side */
 .left-side{
     overflow: hidden;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 
 .left-side:hover{
